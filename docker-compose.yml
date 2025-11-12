@@ -1,0 +1,21 @@
+services:
+  # Next.js app
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NILCC_VERIFIER_URL=http://nilcc-verifier:3001
+    depends_on:
+      - nilcc-verifier
+
+  # nilcc-verifier wrapper service
+  nilcc-verifier:
+    build:
+      context: ./verifier-service
+    ports:
+      - "3001:3001"
+    volumes:
+      - /tmp/nilcc-verifier-cache:/tmp/nilcc-verifier-cache
+    environment:
+      - PORT=3001
