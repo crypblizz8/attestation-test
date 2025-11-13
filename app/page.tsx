@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AttestationBadge } from "@/components/AttestationBadge";
 
 export default function Home() {
   return (
