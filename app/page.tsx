@@ -11,6 +11,13 @@ export default function Home() {
         height={90}
         style={{ border: 'none' }}
       />
+      <p>demo for fake iFrame that is trying to imitiate </p>
+      <iframe
+        src="https://nilcc.nillion.com/api/badge?verificationUrl=https%3A%2F%2Fgithub.com%2Fcrypblizz8%2Fattestation-test%2Fblob%2Fmain%2Fmeasurement-hash.json&reportUrl=https%3A%2F%2Fcbd5005f-ea4e-44e7-8d80-2408112cfca7.workloads.nilcc.sandbox.nillion.network%2Fnilcc%2Fapi%2Fv2%2Freport"
+        width={260}
+        height={90}
+        style={{ border: 'none' }}
+      />
       {/* <iframe
         src="https://nilcc.nillion.com/api/badge?verificationUrl=https%3A%2F%2Fgithub.com%2FNillionNetwork%2Fblind-module-examples%2Fblob%2Fmain%2Fnilcc%2Fattestation-verification%2Fmeasurement-hash.json&reportUrl=https%3A%2F%2F74850b5b-33e2-493b-982e-43aaad9df1bb.workloads.nilcc.sandbox.nillion.network%2Fnilcc%2Fapi%2Fv2%2Freport"
         width={260}
